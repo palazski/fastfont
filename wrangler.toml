@@ -3,3 +3,6 @@ name = "localfont"
 main = ".next/server/app/page.js"
 compatibility_date = "2025-02-03"
 compatibility_flags = ["nodejs_compat"]
+
+[build]
+command = "npm run build"
