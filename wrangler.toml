@@ -1,3 +1,4 @@
 
 name = "localfont"
 main = ".next/server/app/page.js"
+compatibility_date = "2025-02-03"
