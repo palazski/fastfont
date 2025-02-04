@@ -1,5 +1,0 @@
-
-name = "localfont"
-compatibility_date = "2025-02-03"
-compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = ".next"

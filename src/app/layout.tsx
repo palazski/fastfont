@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +16,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "LocalFont",
-  description: "Fast and easy way to download Google Fonts and use them in TailwindCSS.",
+  description: "Fast and easy way to self host Google Fonts and use them in TailwindCSS.",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +32,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <TooltipProvider>
+          {children}
+          <Toaster />
+        </TooltipProvider>
       </body>
     </html>
   );
