@@ -20,6 +20,28 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.svg',
   },
+  openGraph: {
+    title: 'LocalFont',
+    description: 'Fast and easy way to self host Google Fonts and use them in TailwindCSS.',
+    url: 'https://www.localfont.app',
+    siteName: 'LocalFont',
+    images: [
+      {
+        url: '/localfont_og.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'LocalFont',
+    description: 'Fast and easy way to self host Google Fonts and use them in TailwindCSS.',
+    creator: '@palazski',
+    images: ['/localfont.png'],
+  },
 };
 
 export default function RootLayout({
