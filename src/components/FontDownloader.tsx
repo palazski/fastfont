@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import { AlertCircle, Plus, X, FileDown, Code, FileCode, ChevronDown, Eclipse, HelpCircle, Sparkles } from 'lucide-react';
+import { AlertCircle, Plus, X, FileDown, Code, FileCode, ChevronDown, Eclipse, HelpCircle, Sparkles, Terminal, ExternalLink } from 'lucide-react';
 import { Slider } from '@/components/ui/slider';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -380,8 +380,24 @@ const FontDownloader = () => {
 
     return (
         <div className="bg-black p-2 sm:p-6 space-y-6">
+            {/* CLI Banner */}
+            <a 
+                href="https://www.npmjs.com/package/@palazski/localfont"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between gap-4 p-4 py-2 mx-3 sm:mx-6 rounded-lg bg-gradient-to-br from-orange-700/80 to-red-700/80 group relative"
+            >
+                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-orange-400 to-red-500 opacity-20 bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all ease-in-out duration-300"></div>
+                <div className="flex items-center gap-3">
+                    <Terminal className="w-5 h-5 text-orange-500/70 group-hover:text-orange-400 transition-all ease-in-out duration-300" />
+                    <span className="flex flex-wrap items-center gap-2 text-sm text-orange-100/90">
+                        Prefer the command line? Try <code className="px-2 py-1 bg-black/50 rounded font-mono text-orange-400">npx @palazski/localfont</code>
+                    </span>
+                </div>
+            </a>
+
             <Card className="bg-black text-white border-none">
-                <CardHeader className="flex flex-row justify-between items-center py-0">
+                <CardHeader className="flex flex-row justify-between items-center p-3 sm:p-6 py-0 sm:py-0">
                     <CardTitle className="flex items-center gap-3 text-xl sm:text-2xl font-bold">
                         <div className="relative flex items-center justify-center w-8 h-8">
                             <Eclipse strokeWidth={1.5} className="w-8 h-8 bg-transparent text-cyan-500" />
