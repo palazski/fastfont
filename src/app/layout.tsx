@@ -15,19 +15,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LocalFont",
+  title: "FastFont",
   description: "Fast and easy way to self host Google Fonts and use them in TailwindCSS.",
   icons: {
     icon: '/favicon.svg',
   },
   openGraph: {
-    title: 'LocalFont',
+    title: 'FastFont',
     description: 'Fast and easy way to self host Google Fonts and use them in TailwindCSS.',
-    url: 'https://www.localfont.app',
-    siteName: 'LocalFont',
+    url: 'https://www.fastfont.app',
+    siteName: 'FastFont',
     images: [
       {
-        url: '/localfont_og.png',
+        url: '/fastfont_og.png',
         width: 1200,
         height: 630,
       },
@@ -37,10 +37,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LocalFont',
+    title: 'FastFont',
     description: 'Fast and easy way to self host Google Fonts and use them in TailwindCSS.',
     creator: '@palazski',
-    images: ['/localfont.png'],
+    images: ['/fastfont.png'],
   },
 };
 

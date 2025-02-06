@@ -382,7 +382,7 @@ const FontDownloader = () => {
         <div className="bg-black p-2 sm:p-6 space-y-6">
             {/* CLI Banner */}
             <a 
-                href="https://www.npmjs.com/package/@palazski/localfont"
+                href="https://www.npmjs.com/package/@palazski/fastfont"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between gap-4 p-4 py-2 mx-3 sm:mx-6 rounded-lg bg-gradient-to-br from-orange-700/80 to-red-700/80 group relative"
@@ -391,7 +391,7 @@ const FontDownloader = () => {
                 <div className="flex items-center gap-3">
                     <Terminal className="w-5 h-5 text-orange-500/70 group-hover:text-orange-400 transition-all ease-in-out duration-300" />
                     <span className="flex flex-wrap items-center gap-2 text-sm text-orange-100/90">
-                        Prefer the command line? Try <code className="px-2 py-1 bg-black/50 rounded font-mono text-orange-400">npx @palazski/localfont</code>
+                        Prefer the command line? Try <code className="px-2 py-1 bg-black/50 rounded font-mono text-orange-400">npx @palazski/fastfont</code>
                     </span>
                 </div>
             </a>
@@ -404,7 +404,7 @@ const FontDownloader = () => {
                             {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-transparent rounded-lg" /> */}
                         </div>
                         <span className="cursor-pointer bg-gradient-to-r bg-clip-text text-transparent from-cyan-500 to-50% to-blue-500 transition-all duration-300 ease-in-out">
-                            LocalFont
+                            FastFont
                         </span>
                     </CardTitle>
                 </CardHeader>
@@ -419,7 +419,7 @@ const FontDownloader = () => {
                             <div className="space-y-2">
                                 <h3 className="text-blue-400 font-medium">Overview</h3>
                                 <p className="text-gray-300">
-                                    I usually self host my fonts. However, downloading WOFF2 files found from a Google Font's CSS file hidden in a link is a cumbersome task. LocalFont helps you with this process, saving you some time.
+                                    I usually self host my fonts. However, downloading WOFF2 files found from a Google Font's CSS file hidden in a link is a cumbersome task. FastFont helps you with this process, saving you some time.
                                 </p>
                             </div>
 
@@ -432,7 +432,7 @@ const FontDownloader = () => {
                                     </li>
                                     <li className="text-gray-300">
                                         <span className="font-medium">Process the Font</span>
-                                        <p className="ml-5 mt-1 text-gray-400">Paste the URL and click Process. LocalFont will fetch both the CSS file and the font files</p>
+                                        <p className="ml-5 mt-1 text-gray-400">Paste the URL and click Process. FastFont will fetch both the CSS file and the font files</p>
                                     </li>
                                     <li className="text-gray-300">
                                         <span className="font-medium">Download & Setup</span>
