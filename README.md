@@ -27,7 +27,7 @@ A web application that simplifies the process of downloading and self-hosting Go
 Prefer using the command line? Check out our CLI version:
 
 ```bash
-npx @palazski/fastfont
+npx fastfont
 ```
 
 ## License

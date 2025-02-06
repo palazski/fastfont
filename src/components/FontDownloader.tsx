@@ -382,7 +382,7 @@ const FontDownloader = () => {
         <div className="bg-black p-2 sm:p-6 space-y-6">
             {/* CLI Banner */}
             <a 
-                href="https://www.npmjs.com/package/@palazski/fastfont"
+                href="https://www.npmjs.com/package/fastfont"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between gap-4 p-4 py-2 mx-3 sm:mx-6 rounded-lg bg-gradient-to-br from-orange-700/80 to-red-700/80 group relative"
@@ -391,7 +391,7 @@ const FontDownloader = () => {
                 <div className="flex items-center gap-3">
                     <Terminal className="w-5 h-5 text-orange-500/70 group-hover:text-orange-400 transition-all ease-in-out duration-300" />
                     <span className="flex flex-wrap items-center gap-2 text-sm text-orange-100/90">
-                        Prefer the command line? Try <code className="px-2 py-1 bg-black/50 rounded font-mono text-orange-400">npx @palazski/fastfont</code>
+                        Prefer the command line? Try <code className="px-2 py-1 bg-black/50 rounded font-mono text-orange-400">npx fastfont</code>
                     </span>
                 </div>
             </a>
