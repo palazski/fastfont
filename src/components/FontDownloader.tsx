@@ -14,6 +14,7 @@ import { PREVIEW_TEMPLATES } from '@/constants/font';
 import { extractWoff2Urls, downloadWoff2Files, downloadText } from '@/utils/fontUtils';
 import { v4 as uuidv4 } from 'uuid';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 
 interface StepsGuideProps {
     font: any;
@@ -372,7 +373,7 @@ const FontDownloader = () => {
                 <li>Go to fonts.google.com</li>
                 <li>Select your desired font and click on it</li>
                 <li>Click "Get embed code"</li>
-                <li>Go to the "Embed code in the &lt;head&gt; of your html" section</li>
+                <li>Go to the "Embed code in the <code className="bg-blue-900/50 px-1 rounded">&lt;head&gt;</code> of your html" section</li>
                 <li>Copy the <code className="bg-blue-900/50 px-1 rounded">&lt;link&gt;</code> tag's href URL</li>
             </ol>
         </div>
@@ -433,14 +434,14 @@ const FontDownloader = () => {
                                     <div className="flex-1">
                                         <label className="text-xl font-medium mb-1 text-gray-300 flex items-center gap-2">
                                             {font.name || "Add a font"}
-                                            <Tooltip delayDuration={0}>
-                                                <TooltipTrigger>
+                                            <Popover>
+                                                <PopoverTrigger>
                                                     <HelpCircle className="w-4 h-4 text-gray-400 hover:text-gray-300 cursor-help" />
-                                                </TooltipTrigger>
-                                                <TooltipContent side="right" sideOffset={5} className='bg-black p-0 m-2'>
+                                                </PopoverTrigger>
+                                                <PopoverContent side="right" className="bg-black">
                                                     {googleFontsHelp}
-                                                </TooltipContent>
-                                            </Tooltip>
+                                                </PopoverContent>
+                                            </Popover>
                                         </label>
                                         <form onSubmit={handleSubmit}>
                                             <input
